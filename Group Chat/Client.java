@@ -4,12 +4,9 @@ import java.io.*;
 class Client {
     private static final String ADDRESS = "127.0.0.1";
     private static final int PORT = 9086;
-    private static final String STOP = "quit";
     private static Socket clientSocket;
     private static PrintWriter out;
     private static BufferedReader in, userInput;
-    // private static boolean typing = false;
-    private static boolean stopChat = false;
     private static Thread readThread, sendThread;
 
     public static class ReadMessageThread implements Runnable {
