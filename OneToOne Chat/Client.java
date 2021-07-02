@@ -61,7 +61,7 @@ class Client {
         try {
             clientSocket = new Socket(ADDRESS, PORT);
 
-            in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
+            in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream(), "UTF-8"));
             userInput = new BufferedReader(new InputStreamReader(System.in));
 
             out = new PrintWriter(clientSocket.getOutputStream(), true);

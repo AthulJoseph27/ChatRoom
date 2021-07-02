@@ -2,7 +2,7 @@ import java.net.Socket;
 import java.io.*;
 
 class Client {
-    private static final String ADDRESS = "127.0.0.1";
+    private static final String ADDRESS = "3.7.253.234";
     private static final int PORT = 9086;
     private static Socket clientSocket;
     private static PrintWriter out;

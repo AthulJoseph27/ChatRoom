@@ -13,7 +13,7 @@ class ConnectionHandler implements Runnable {
     ConnectionHandler(int id, Socket clientSocket) throws IOException {
         this.id = id;
         this.clientSocket = clientSocket;
-        this.in = new BufferedReader(new InputStreamReader(this.clientSocket.getInputStream()));
+        this.in = new BufferedReader(new InputStreamReader(this.clientSocket.getInputStream(), "UTF-8"));
         this.out = new PrintWriter(this.clientSocket.getOutputStream(), true);
     }
 
